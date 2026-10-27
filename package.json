@@ -1,0 +1,22 @@
+{
+  "name": "template-express-postgres",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Node.js API on Master da Web serverless: Express, PostgreSQL and private files on Object Storage.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate": "node src/migrate.js"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1156.0",
+    "@aws-sdk/s3-request-presigner": "^3.1156.0",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "pg": "^8.23.1"
+  }
+}
